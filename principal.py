@@ -58,17 +58,17 @@ while True:
             clave = input("Clave: ")
             #aquí comprobamos que el nombre esté ingresado en nuestro diccionario y si su clave sea la correcta del usuario
             if nombre in usuarios and usuarios[nombre]["clave"] == clave:
-                print(f"Bienvenido/a {nombre}. Inicio de sesión exitoso.")
+                print(f"Bienvenido/a {nombre}.")
                 break
             else:
                 intentos -= 1
                 print(f"Nombre o clave incorrectos. Te quedan {intentos} intento(s).")
 
         if intentos == 0:
-            print("Has superado el número máximo de intentos. Vuelve a intentarlo desde el menú.")
+            print("Has superado el número máximo de intentos. Vuelve a intentarlo.")
 
     elif opcion == "3":
-        print("Programa finalizado.")
+        print("¡Hasta pronto, Adiós!.")
         break
 
     else:
